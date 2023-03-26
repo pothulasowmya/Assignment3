@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulations</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">DOM MANIPULATION EXERCISES</h2>
+
+    <h3>Implement an "onmouseover" and "onmouseout" on paragraph:</h3>
+    <p id="paragraph" onmouseover="mouseover()" onmouseout="mouseout()">DOM manipulation is when you use JavaScript to add, remove, and modify elements of a website. It is very common in web development. We just published a course on the freeCodeCamp.org YouTube channel that will teach you the basics of DOM manipulation with JavaScript. CodeLab developed this course</p>
+
+    <h3>Implement an "onmouseover" and "onmouseout" on Button:</h3>
+    <button id="btn" onmouseover="button1()" onmouseout="button2()">MouseEvent</button>
+
+    <h3>Implement an "onclick" on input-textbox</h3>
+    <input id="mybtn" type="button" value="Button" onclick="sample()">
+    <p id="demo"></p>
+
+    <h3>Implement an "onmouseover" and "onmouseout" on list-items</h3>
+    <or id="list1" onmouseover="listfruits()" onmouseout="listfruits1()">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Grapes</li>
+        <li>Mango</li>
+    </or>
+
+     <script type="text/javascript">
+        function mouseover() {
+            document.getElementById("paragraph").style.color = "red";
+        }
+
+        function mouseout() {
+            document.getElementById("paragraph").style.color = "black";
+        }
+
+        function button1() {
+            document.getElementById("btn").innerHTML = "change";
+        }
+
+        function button2() {
+            document.getElementById("btn").innerHTML = "MouseEvent";
+        }
+
+        function sample() {
+            document.getElementById("mybtn").value;
+            document.getElementById("demo").innerHTML = "Dom Manipulation Exercises";
+        }
+
+        function listfruits() {
+            document.getElementById("list1").style.color = "Green";
+            document.getElementById("list1").style.fontWeight = "bold"
+        }
+
+        function listfruits1() {
+            document.getElementById("list1").style.color = "black";
+            document.getElementById("list1").style.fontWeight = "normal";
+        }
+
+   </script>
+</body>
+</html>
